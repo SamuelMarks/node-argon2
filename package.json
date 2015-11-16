@@ -1,0 +1,31 @@
+{
+  "name": "node-argon2",
+  "version": "0.0.1",
+  "description": "Wrapper of the Password Hashing Competition winner Argon2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamuelMarks/node-argon2.git"
+  },
+  "keywords": [
+    "cryptography",
+    "hashing",
+    "hash",
+    "crypto",
+    "sha",
+    "sha3",
+    "sha1",
+    "argon",
+    "argon2",
+    "phc"
+  ],
+  "author": "Samuel Marks <samuelmarks@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamuelMarks/node-argon2/issues"
+  },
+  "homepage": "https://github.com/SamuelMarks/node-argon2#readme"
+}
