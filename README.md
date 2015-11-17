@@ -12,4 +12,10 @@ node-argon2
     node-gyp configure
     node-gyp build
 
-Alternatively there is a CMakeLists.txt which you can use accordingly.
+Alternatively use CMake. First `npm install -g cmake-js` then:
+
+    npm run-script build
+
+Finally if you're using `n` to manage your Node, either:
+  - symbolically link your header files to /usr/include, or
+  - append `include_directories` [CMake] and `include_dirs` [gyp]

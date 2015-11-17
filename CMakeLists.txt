@@ -1,8 +1,15 @@
-cmake_minimum_required(VERSION 3.3)
+cmake_minimum_required(VERSION 2.8)
+
 project(node_argon2)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
-include_directories(/home/samuelm/n/include/node lib/src)
-set(SOURCE_FILES src/main.cpp src/argon2_wrapper.h src/argon2_wrapper.cpp src/argon2_wrapper.h)
 
-add_executable(node_argon2 ${SOURCE_FILES})
+file(GLOB SOURCE_FILES "src/*.cpp" "src/*.h")
+add_library(${PROJECT_NAME} SHARED ${SOURCE_FILES})
+include_directories(lib/src)
+
+set_target_properties(${PROJECT_NAME} PROPERTIES PREFIX "" SUFFIX ".node")
+
+target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_JS_INC})
+
+target_link_libraries(${PROJECT_NAME} ${CMAKE_JS_LIB})

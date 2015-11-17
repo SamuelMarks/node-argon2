@@ -1,5 +1,5 @@
-#include <node.h>
 #include <iostream>
+#include <node.h>
 
 #include "argon2_wrapper.h"
 
@@ -43,4 +43,8 @@ namespace argon2 {
     }
 
     NODE_MODULE(addon, Init)
+}
+
+int main(void) {
+    std::cout << "Hello";
 }

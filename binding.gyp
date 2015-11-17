@@ -1,7 +1,7 @@
 {
   "targets": [
     {
-      "target_name": "argon2",
+      "target_name": "node_argon2",
       "sources": [
         "src/main.cpp",
         "src/argon2_wrapper.cpp"

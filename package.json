@@ -2,9 +2,11 @@
   "name": "node-argon2",
   "version": "0.0.1",
   "description": "Wrapper of the Password Hashing Competition winner Argon2",
-  "main": "index.js",
+  "main": "example.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install": "cmake-js compile",
+    "build": "cmake-js build",
+    "start": "node example.js"
   },
   "repository": {
     "type": "git",
@@ -17,10 +19,13 @@
     "crypto",
     "sha",
     "sha3",
+    "md5",
     "sha1",
     "argon",
     "argon2",
-    "phc"
+    "phc",
+    "password",
+    "salt"
   ],
   "author": "Samuel Marks <samuelmarks@gmail.com>",
   "license": "ISC",
